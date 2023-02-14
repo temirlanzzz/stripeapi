@@ -6,7 +6,6 @@ COPY . /stripeapi
 COPY requirements.txt /stripeapi/requirements.txt
 COPY stripeapi/wsgi.py /stripeapi/wsgi.py
 COPY stripeapi/settings.py /stripeapi/settings.py
-COPY .env /stripeapi/.env
 
 RUN pip install --no-cache-dir -r /stripeapi/requirements.txt
 
