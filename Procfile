@@ -1,0 +1,1 @@
+web: gunicorn stripeapi.wsgi --preload --timeout 30 --log-file -
