@@ -14,7 +14,7 @@ To run the app:
  - http://localhost:8000/api/item/1 for item
  - http://localhost:8000/api/buy/1 - buy item
  - http://localhost:8000/admin/ - for admin panel 
- To access admin panel create a super user: python manage.py createsuperuser
+ - To access admin panel create a super user: python manage.py createsuperuser
 
 
 
