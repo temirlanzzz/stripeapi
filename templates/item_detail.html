@@ -1,12 +1,11 @@
 <h1>{{ item.name }}</h1>
 <p>{{ item.description }}</p>
 <p>{{ item.price }}</p>
-<button id="buy-button">Buy (JS redirectToCheckout)</button>
-<button onclick="window.location.href='{% url 'buy_item_redirect' item.id %}'">Buy (Python redirectToCheckout)</button>
+<button id="buy-button">Buy</button>
 
 <script src="https://js.stripe.com/v3/"></script>
 <script>
-    var stripe = Stripe('{{stripe_api_key}}');
+    var stripe = Stripe('pk_test_51MagawAWPl9VAO60DhfynNVDFk94MZieNNh5JY23lUd1y9hYs0XTL4CwKOdjTvMT6D5CccXEYSGYyTXRnulpiMkQ00R0o3vNmz');
   document.getElementById("buy-button").addEventListener("click", function() {
     fetch("/buy/{{ item.id }}/",{method: 'GET'})
       .then(response => response.json())
