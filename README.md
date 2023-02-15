@@ -1,9 +1,9 @@
 Django + stripe
 
 prerequisites:
-Docker
-Python
-environmental variables in .env file
+ - Docker
+ - Python
+ - environmental variables in .env file
 
 To run the app:
 1. Clone this repo: git clone https://github.com/temirlanzzz/stripeapi.git
